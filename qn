@@ -1,0 +1,82 @@
+//find the minimum elements in the array
+#include<iostream>
+using namespace std;
+int findMax(int *a,int n){
+    int max=*a;
+    for(int i=1;i<n;i++){
+        if(*(a+i)<max){
+            max=*(a+i);
+        }
+    }
+    return max;
+}
+int main(){
+    int a[]={1,2,3,4,5};
+    int n=sizeof(a)/sizeof(a[0]);
+    cout<<findMax(a,n);
+}
+//average of array elements
+#include<iostream>
+using namespace std;
+int findavg(int *a,int n){
+    int avg=*a;
+    for(int i=1;i<n;i++){
+        avg+=*(a+i);
+    }
+    return avg/n;
+}
+int main(){
+    int a[]={1,2,3,4,5};
+    int n=sizeof(a)/sizeof(a[0]);
+    cout<<findavg(a,n);
+}
+//sum of array elemeents
+#include<iostream>
+using namespace std;
+int findSum(int *a,int n){
+    int sum=*a;
+    for(int i=1;i<n;i++){
+        sum+=*(a+i);
+    }
+  return sum;
+}
+int main(){
+    int a[]={1,2,3,4,5};
+    int n=sizeof(a)/sizeof(a[0]);
+    cout<<findSum(a,n);
+}
+//Find the maximum number of array elements
+#include<iostream>
+using namespace std;
+int findMax(int *a,int n){
+    int max=*a;
+    for(int i=1;i<n;i++){
+        if(*(a+i)<max){
+            max=*(a+i);
+        }
+    }
+    return max;
+}
+int main(){
+    int a[]={1,2,3,4,5};
+    int n=sizeof(a)/sizeof(a[0]);
+    cout<<findMax(a,n);
+}
+//copying the string
+#include <iostream>
+using namespace std;
+void copy(char *s,char *d){
+    while(*s!='\0'){
+        *d=*s;
+        d++;
+        s++;
+        
+    }
+    *d='\0';
+}
+int main(){
+    char s[]="hello";
+    char d[20];
+    copy(s,d);
+    cout<<d;
+}
