@@ -1,0 +1,297 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    if((n%400==0)||((n%4==0)&&(n%100!=0))){
+        cout<<"Leap year";
+    }
+    else{
+        cout<<"Not leap year";
+    }
+    
+}
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    int row=3;
+    int col=4;
+    if((n>=1 && n<=4) ||(n%4==1)||(n%4==0)){
+        cout<<"Mango tree";
+    }
+    else{
+        cout<<"Apple tree";
+    }
+}
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int a;
+    cin>>a;
+    int b;
+    cin>>b;
+    int c;
+    cin>>c;
+    double delta=((b*b)-(4*a*c));
+    if(delta>=0){
+      
+         double root1=((-b+sqrt(delta))/(2*a));
+         double root2=((-b-sqrt(delta))/(2*a));
+        cout<<"Real roots";
+        cout<<root1;
+        cout<<root2;
+    }
+    if(delta<0){
+        cout<<"No real roots";
+    }
+    
+       
+}
+
+square pattern
+#include<iostream>
+using namespace std;
+int main(){
+    int row=4;
+    int col=4;
+    for(int i=1;i<=row;i++){
+        for(int j=1;j<=col;j++){
+            cout<<" * ";
+        }
+        cout<<"\n";
+    }
+   
+    
+}
+
+rectangle pattern
+#include<iostream>
+using namespace std;
+int main(){
+    int row=4;
+    int col=9;
+    for(int i=1;i<=row;i++){
+        for(int j=1;j<=col;j++){
+            cout<<" * ";
+        }
+        cout<<"\n";
+    }
+    
+}
+
+#include<iostream>
+using namespace std;
+int main(){
+    int row=4;
+    int col=4;
+    for(int i=1;i<=row;i++){
+        for(int j=1;j<=col;j++){
+            if(i==1||j==1||i==row||j==col)
+            {
+                cout<<"*";
+            }
+            else
+            {
+                cout<<" ";
+            }
+        }
+        cout<<endl;
+    }
+}
+
+right triangle using number
+#include<iostream>
+using namespace std;
+int main(){
+    int row=3;
+    int col=4;
+    for(int i=1;i<=row;i++){
+        for(int j=1;j<=i;j++){
+            cout<<i<<" ";
+        }
+        cout<<"\n";
+    }
+    
+}
+
+right angled triangle
+#include<iostream>
+using namespace std;
+int main(){
+    int row=3;
+    int col=4;
+    for(int i=1;i<=row;i++){
+        for(int j=1;j<=i;j++){
+            cout<<"*"<<" ";
+        }
+        cout<<"\n";
+    }
+    
+}
+
+
+mirror of right angled triangle && triangle
+#include<iostream>
+using namespace std;
+int main(){
+    int row=4;
+    
+    for(int i=1;i<=row;i++){
+        for(int k=1;k<=row-i;k++){
+            cout<<" ";
+        }
+      for(int j=1;j<=i;j++){
+        cout<<"*";
+    } 
+    cout<<"\n";
+    }
+    
+    
+}
+butterfly star
+#include<iostream>
+using namespace std;
+int main(){
+    int row=4;
+    for(int i=1;i<=row;i++){
+        for(int j=1;j<=i;j++){
+            cout<<"*";
+        }
+        for(int k=1;k<=2*(row-i);k++){
+            cout<<" ";
+        }
+        for(int j=1;j<=i;j++){
+            cout<<"*";
+        }
+        cout<<"\n";
+    }
+     for(int i=row-1;i>=1;i--){
+        for(int j=1;j<=i;j++){
+            cout<<"*";
+        }
+        for(int k=1;k<=2*(row-i);k++){
+            cout<<" ";
+        }
+        for(int j=1;j<=i;j++){
+            cout<<"*";
+        }
+        cout<<"\n";
+    }
+}
+
+rhombus
+#include<iostream>
+using namespace std;
+int main(){
+    int row=4;
+    for(int i=1;i<=row;i++){
+        for(int j=1;j<=row-i;j++){
+            cout<<" ";
+        }
+        for(int k=1;k<=row;k++){
+            cout<<"*";
+        }
+        cout<<"\n";
+    }
+}
+
+diamond the triangle
+#include<iostream>
+using namespace std;
+int main(){
+    int r=5;
+    for(int i=1;i<=r;i++){
+        for(int j=1;j<=r-i;j++){
+            cout<<" ";
+        }
+        for(int k=1;k<=i;k++){
+            cout<<"* ";
+        }
+        cout<<"\n";
+    }
+    for(int i=r-1;i>=1;i--){
+        for(int j=1;j<=r-i;j++){
+            cout<<" ";
+        }
+        for(int k=1;k<=i;k++){
+            cout<<"* ";
+        }
+        cout<<"\n";
+    }
+}
+
+pyramid
+#include<iostream>
+using namespace std;
+int main(){
+    int row=5;
+    for(int i=1;i<=row;i++){
+        for(int k=1;k<=row-i;k++){
+            cout<<" ";
+        }
+        for(int j=1;j<=2*i-1;j++){
+            if(j==1||j==2*i-1||i==row){
+            cout<<"*";
+            }
+            else
+            {
+                cout<<" ";
+            }
+        }
+        cout<<"\n";
+    }
+    
+}
+
+hollow pyramid
+#include<iostream>
+using namespace std;
+int main(){
+    int row=5;
+    for(int i=1;i<=row;i++){
+        for(int k=1;k<=row-i;k++){
+            cout<<" ";
+        }
+        for(int j=1;j<=2*i-1;j++){
+            if(j==1||j==2*i-1){
+            cout<<"*";
+            }
+            else
+            {
+                cout<<" ";
+            }
+        }
+        cout<<"\n";
+    }
+    for(int i=row-1;i>=0;i--){
+        for(int k=1;k<=row-i;k++){
+            cout<<" ";
+        }
+        for(int j=1;j<=2*i-1;j++){
+            if(j==1||j==2*i-1){
+            cout<<"*";
+            }
+            else
+            {
+                cout<<" ";
+            }
+        }
+        cout<<"\n";
+    }
+    
+}
+
+
+
+    
+
+
+
+
+
+
+
